@@ -27,26 +27,19 @@
         .table-dark th, .table-dark td {
             color: #f8f9fa;
         }
-        /* Change the text color of Difficulty header */
         .table-dark th:nth-child(3) {
-            color: #ffffff; /* White color */
+            color: #ffffff;
         }
-        /* Google Form should cover 100% of the screen */
-        .form-container {
-            margin-top: 30px;
+        .carousel-item iframe {
             width: 100%;
-            height: 80vh; /* Makes form take most of the screen height */
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
+            height: 90vh; /* Increased form height */
             border: none;
         }
     </style>
 </head>
 <body>
     <div class="container py-5">
-        <h1 style="color: rgb(9, 218, 9); " class="text-center mb-4  ">Capture Ops</h1>
+        <h1 style="color: rgb(9, 218, 9);" class="text-center mb-4">Capture Ops</h1>
         <table class="table table-bordered table-hover table-striped">
             <thead class="table-dark">
                 <tr>
@@ -57,52 +50,79 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="#">ELF x86 - 0 protection</a></td>
+                    <td><a target="_blank" href="https://abhishek1325.github.io/Capture-Ops/">Socially Awkward</a></td>
                     <td class="text-white">5</td>
                     <td><span class="text-success">●</span></td>
                 </tr>
                 <tr>
-                    <td><a href="#">ELF x86 - Basic</a></td>
+                    <td><a target="_blank" href="https://example.com/hear-me-out">Hear Me Out</a></td>
+                    <td class="text-white">10</td>
+                    <td><span class="text-danger">●</span></td>
+                </tr>
+                <tr>
+                    <td><a target="_blank" href="https://example.com/number-roulette">Number Roulette</a></td>
                     <td class="text-white">5</td>
                     <td><span class="text-success">●</span></td>
                 </tr>
                 <tr>
-                    <td><a href="#">PE x86 - 0 protection</a></td>
-                    <td class="text-white">5</td>
-                    <td><span class="text-warning">●</span></td>
-                </tr>
-                <tr>
-                    <td><a href="#">ELF C++ - 0 protection</a></td>
-                    <td class="text-white">5</td>
-                    <td><span class="text-warning">●</span></td>
-                </tr>
-                <tr>
-                    <td><a href="#">Godot - 0 protection</a></td>
-                    <td class="text-white">5</td>
+                    <td><a target="_blank" href="https://jeet1703.github.io/CaptureopsEncryptedtext/">Decryption Arena</a></td>
+                    <td class="text-white">10</td>
                     <td><span class="text-danger">●</span></td>
                 </tr>
                 <tr>
-                    <td><a href="#">PE DotNet - 0 protection</a></td>
+                    <td><a target="_blank" href="https://example.com/movie-mania">Movie Mania</a></td>
                     <td class="text-white">5</td>
+                    <td><span class="text-success">●</span></td>
+                </tr>
+                <tr>
+                    <td><a target="_blank" href="https://example.com/riddle-time">Riddle Time</a></td>
+                    <td class="text-white">10</td>
                     <td><span class="text-danger">●</span></td>
                 </tr>
                 <tr>
-                    <td><a href="#">APK - Introduction</a></td>
+                    <td><a target="_blank" href="https://example.com/murder-mystery">Murder Mystery</a></td>
                     <td class="text-white">5</td>
+                    <td><span class="text-success">●</span></td>
+                </tr>
+                <tr>
+                    <td><a target="_blank" href="https://example.com/number-game">Number Game</a></td>
+                    <td class="text-white">10</td>
                     <td><span class="text-danger">●</span></td>
                 </tr>
                 <tr>
-                    <td><a href="#">ELF MIPS - Basic Crackme</a></td>
+                    <td><a target="_blank" href="https://jeet1703.github.io/CaptureopsPasswordGame/">Crack The Password</a></td>
                     <td class="text-white">5</td>
+                    <td><span class="text-success">●</span></td>
+                </tr>
+                <tr>
+                    <td><a target="_blank" href="https://example.com/look-around">Look Around</a></td>
+                    <td class="text-white">10</td>
                     <td><span class="text-danger">●</span></td>
                 </tr>
             </tbody>
         </table>
-        
-        <!-- Google Form Embed Section -->
-        <div class="form-container">
-            <h2 class="text-center">Submit Your Flags</h2>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7dbgHiauMngsDx6z8tDWZaQ3Q9uWU9j-WVZE0ClDgqfux9g/viewform?usp=header" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+        <!-- Google Forms Carousel -->
+        <div id="formCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7dbgHiauMngsDx6z8tDWZaQ3Q9uWU9j-WVZE0ClDgqfux9g/viewform?usp=header"></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2gdgDfSpMm1TFeXGQg7hKf43pplzpAqsfZdP5GUb5jQghng/viewform?usp=header"></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSewk23DfTgpOj2QyIfLsRtShCStn9L2eUqM7K3DF6pFiGHSDw/viewform?usp=header"></iframe>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#formCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#formCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
