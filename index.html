@@ -6,123 +6,196 @@
     <title>Capture Ops - Puzzle Homepage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@400;500&display=swap');
+
         body {
             background-color: #121212;
             color: #f8f9fa;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: 'Roboto Mono', monospace;
         }
+
         h1 {
-            color: #ffffff;
+            color: #09da09;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
         }
+
         a {
-            color: #ffffff;
+            color: #09da09;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         .table-dark {
             background-color: #1e1e1e;
         }
+
         .table-dark th, .table-dark td {
-            color: #f8f9fa;
-        }
-        .table-dark th:nth-child(3) {
             color: #ffffff;
         }
-        .carousel-item iframe {
-            width: 100%;
-            height: 90vh; /* Increased form height */
-            border: none;
+
+        .table-dark th {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .logo-placeholder img {
+            max-height: 80px;
+            max-width: 80px;
+        }
+
+        .table-container {
+            margin-top: 2rem;
+        }
+
+        td img {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            border-radius: 50%;
         }
     </style>
 </head>
 <body>
     <div class="container py-5">
-        <h1 style="color: rgb(9, 218, 9);" class="text-center mb-4">Capture Ops</h1>
-        <table class="table table-bordered table-hover table-striped">
-            <thead class="table-dark">
-                <tr>
-                    <th>Name</th>
-                    <th>Number of Points</th>
-                    <th>Difficulty</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a target="_blank" href="https://abhishek1325.github.io/Capture-Ops/">Socially Awkward</a></td>
-                    <td class="text-white">5</td>
-                    <td><span class="text-success">●</span></td>
-                </tr>
-                <tr>
-                    <td><a target="_blank" href="https://example.com/hear-me-out">Hear Me Out</a></td>
-                    <td class="text-white">10</td>
-                    <td><span class="text-danger">●</span></td>
-                </tr>
-                <tr>
-                    <td><a target="_blank" href="https://example.com/number-roulette">Number Roulette</a></td>
-                    <td class="text-white">5</td>
-                    <td><span class="text-success">●</span></td>
-                </tr>
-                <tr>
-                    <td><a target="_blank" href="https://jeet1703.github.io/CaptureopsEncryptedtext/">Decryption Arena</a></td>
-                    <td class="text-white">10</td>
-                    <td><span class="text-danger">●</span></td>
-                </tr>
-                <tr>
-                    <td><a target="_blank" href="https://gdgamity.github.io/CaptureOpsMovie/">Movie Mania</a></td>
-                    <td class="text-white">5</td>
-                    <td><span class="text-success">●</span></td>
-                </tr>
-                <tr>
-                    <td><a target="_blank" href="https://example.com/riddle-time">Riddle Time</a></td>
-                    <td class="text-white">10</td>
-                    <td><span class="text-danger">●</span></td>
-                </tr>
-                <tr>
-                    <td><a target="_blank" href="https://example.com/murder-mystery">Murder Mystery</a></td>
-                    <td class="text-white">5</td>
-                    <td><span class="text-success">●</span></td>
-                </tr>
-                <tr>
-                    <td><a target="_blank" href="https://swastika0509.github.io/Guess_the_number/">Number Game</a></td>
-                    <td class="text-white">10</td>
-                    <td><span class="text-danger">●</span></td>
-                </tr>
-                <tr>
-                    <td><a target="_blank" href="https://jeet1703.github.io/CaptureopsPasswordGame/">Crack The Password</a></td>
-                    <td class="text-white">5</td>
-                    <td><span class="text-success">●</span></td>
-                </tr>
-                <tr>
-                    <td><a target="_blank" href="https://example.com/look-around">Look Around</a></td>
-                    <td class="text-white">10</td>
-                    <td><span class="text-danger">●</span></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!-- Google Forms Carousel -->
-        <div id="formCarousel" class="carousel slide my-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7dbgHiauMngsDx6z8tDWZaQ3Q9uWU9j-WVZE0ClDgqfux9g/viewform?usp=header"></iframe>
-                </div>
-                <div class="carousel-item">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2gdgDfSpMm1TFeXGQg7hKf43pplzpAqsfZdP5GUb5jQghng/viewform?usp=header"></iframe>
-                </div>
-                <div class="carousel-item">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSewk23DfTgpOj2QyIfLsRtShCStn9L2eUqM7K3DF6pFiGHSDw/viewform?usp=header"></iframe>
-                </div>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="logo-placeholder">
+                <img src="./VRGD logo.png" alt="VRGD Logo">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#formCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#formCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <h1 class="text-center">CAPTURE OPS</h1>
+            <div class="logo-placeholder">
+                <img src="./GDG logo.png" alt="GDG Logo">
+            </div>
+        </div>
+
+        <!-- Table Container -->
+        <div class="table-container">
+            <table class="table table-bordered table-hover table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Number of Points</th>
+                        <th>Difficulty</th>
+                        <th>Author</th>
+                        <th>Submit Flag</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://abhishek1325.github.io/Capture-Ops/">Socially Awkward</a>
+                        </td>
+                        <td class="text-white">5</td>
+                        <td><span class="text-success">●</span></td>
+                        <td class="text-white">Abhishek</td>
+                        <td>
+                            <a class="btn btn-outline-success btn-sm" href="https://forms.gle/example" target="_blank">Submit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://real-proxy.github.io/Audio/">Hear Me Out</a>
+                        </td>
+                        <td class="text-white">10</td>
+                        <td><span class="text-danger">●</span></td>
+                        <td class="text-white">Archit</td>
+                        <td>
+                            <a class="btn btn-outline-success btn-sm" href="https://forms.gle/example" target="_blank">Submit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://gdgamity.github.io/CaptureOpsCrypt/">Number Sum Game</a>
+                        </td>
+                        <td class="text-white">5</td>
+                        <td><span class="text-success">●</span></td>
+                        <td class="text-white">Kanchan</td>
+                        <td>
+                            <a class="btn btn-outline-success btn-sm" href="https://forms.gle/example" target="_blank">Submit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://jeet1703.github.io/CaptureopsEncryptedtext/">Decryption Arena</a>
+                        </td>
+                        <td class="text-white">10</td>
+                        <td><span class="text-danger">●</span></td>
+                        <td class="text-white">Prabhjeet</td>
+                        <td>
+                            <a class="btn btn-outline-success btn-sm" href="https://forms.gle/example" target="_blank">Submit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://gdgamity.github.io/CaptureOpsMovie/">Movie Mania</a>
+                        </td>
+                        <td class="text-white">5</td>
+                        <td><span class="text-success">●</span></td>
+                        <td class="text-white">Kanchan</td>
+                        <td>
+                            <a class="btn btn-outline-success btn-sm" href="https://forms.gle/example" target="_blank">Submit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://real-proxy.github.io/Riddle/">Riddle Time</a>
+                        </td>
+                        <td class="text-white">10</td>
+                        <td><span class="text-danger">●</span></td>
+                        <td class="text-white">Archit</td>
+                        <td>
+                            <a class="btn btn-outline-success btn-sm" href="https://forms.gle/example" target="_blank">Submit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://real-proxy.github.io/Murder-Mystery/">Murder Mystery</a>
+                        </td>
+                        <td class="text-white">5</td>
+                        <td><span class="text-success">●</span></td>
+                        <td class="text-white">Aditya</td>
+                        <td>
+                            <a class="btn btn-outline-success btn-sm" href="https://forms.gle/example" target="_blank">Submit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://example.com/high-low">High & Low</a>
+                        </td>
+                        <td class="text-white">10</td>
+                        <td><span class="text-danger">●</span></td>
+                        <td class="text-white">Swastika</td>
+                        <td>
+                            <a class="btn btn-outline-success btn-sm" href="https://forms.gle/example" target="_blank">Submit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://jeet1703.github.io/CaptureopsPasswordGame/">Crack The Password</a>
+                        </td>
+                        <td class="text-white">5</td>
+                        <td><span class="text-success">●</span></td>
+                        <td class="text-white">Prabhjeet</td>
+                        <td>
+                            <a class="btn btn-outline-success btn-sm" href="https://forms.gle/example" target="_blank">Submit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://example.com/look-around">Look Around</a>
+                        </td>
+                        <td class="text-white">10</td>
+                        <td><span class="text-danger">●</span></td>
+                        <td class="text-white">Maan</td>
+                        <td>
+                            <a class="btn btn-outline-success btn-sm" href="https://forms.gle/example" target="_blank">Submit</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
